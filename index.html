@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olatunji Oyinloluwa - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="send_booking_email.js"></script>
+
+
+    <script>
+        // Get the form element
+        const bookingForm = document.getElementById('bookingForm');
+
+        // Add event listener for form submission
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent form submission
+
+            // Get input values
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const messageInput = document.getElementById('message');
+
+            // Display input values in console
+            console.log('Name:', nameInput.value);
+            console.log('Email:', emailInput.value);
+            console.log('Message:', messageInput.value);
+
+            // You can perform additional actions here, such as sending the form data to a server
+            // using AJAX or redirecting to a thank you page
+        });
+    </script>
+
+
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Olatunji Oyinloluwa</h1>
+            <p>Electrical and Information Engineering Graduate | Full-Stack Developer</p>
+            <a href="#contact" class="btn">Get in touch</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>A highly motivated and passionate electrical and information engineering graduate with a strong aptitude
+                for coding and experience in managing and collaborating on various engineering projects. I am an
+                innovative professional with a proven ability to provide practical solutions to engineering, computing,
+                and business challenges.</p>
+            <!-- Add more content about yourself -->
+        </div>
+    </section>
+
+
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Work Experience</h2>
+
+            <div class="experience-item">
+                <h3>National Youth Service Corps - His Majesty International School</h3>
+                <p class="experience-duration">March 2022 - March 2023</p>
+                <ul class="experience-description">
+                    <li>Introduction to various parts of a computer and their functions</li>
+                    <li>Word processing; loading and exiting the word processor, creating and loading files</li>
+                    <li>Computer design for 2D design and 3D modeling</li>
+                    <li>Information transmission; methods for transmitting information</li>
+                    <li>Computer workshops; computer management ethics</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Smart Technologies</h3>
+                <p class="experience-duration">Feb 2020 - Nov 2020</p>
+                <ul class="experience-description">
+                    <li>Modeling and design of magnetic levitating system prototypes</li>
+                    <li>Cost analysis of prototype materials</li>
+                    <li>Construction and implementation of design</li>
+                    <li>Fault diagnosis and redesign of the magnetic levitating system</li>
+                </ul>
+            </div>
+
+            <!-- Add more work experience items as needed -->
+
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+
+
+            <h3>Traversy Media</h3>
+            <ul>
+                <li>Responsive Personal Portfolio Website</li>
+                <li>E-commerce Website with Payment Integration</li>
+                <li>Social Media Dashboard</li>
+            </ul>
+            <h3>JavaScript Mastery</h3>
+            <ul>
+                <li>Weather App with Real-time Data</li>
+                <li>Task Manager Application</li>
+                <li>Expense Tracker</li>
+            </ul>
+
+            <h3>WebDevSimplified</h3>
+            <ul>
+                <li>Note-taking Application with User Authentication</li>
+                <li>Recipe Finder App with API Integration</li>
+                <li>Todo List with Drag and Drop Functionality</li>
+            </ul>
+
+            <!-- Add details and links to your projects -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Want to work together or have any questions? Feel free to get in touch.</p>
+            <a href="mailto:oyinloluwa20@gmail.com" class="btn">Email me</a>
+            <!-- Add a contact form if desired -->
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+
+    <section id="booking" class="section">
+        <div class="container">
+            <h2>Book a Session</h2>
+            <p>Interested in booking a session with me? Fill out the form below.</p>
+            <form action="#" method="post" class="booking-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Olatunji Oyinloluwa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
